@@ -38,7 +38,7 @@ class AdminController extends Controller
      */
     public function actionIndex()
     {
-        $searchModel = new itemSearch();
+        $searchModel = new ItemSearch();
         $dataProvider = $searchModel->search(Yii::$app->request->queryParams);
         $session = Yii::$app->session;
         if ( $session->get('user') == 'admin'){

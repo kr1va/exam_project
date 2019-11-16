@@ -35,7 +35,7 @@ class ItemController extends Controller
      */
     public function actionIndex($name)
     {
-        $searchModel = new itemSearch();
+        $searchModel = new ItemSearch();
         $dataProvider = $searchModel->search(Yii::$app->request->queryParams);
         if ($name) {
         $item = new Item();
