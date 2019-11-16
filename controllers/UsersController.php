@@ -11,16 +11,12 @@ class UsersController extends Controller
 {
 public function actionIndex() {
     $user = new Users();
-//    $user->login($id);
-//    return $this->renderPartial('login');
     return $this->renderPartial('login' , ['model'=>$user]);
 }
 
 public function actionLogin() {
     $name = $_POST['name'];
     $pass = $_POST['pass'];
-//    $userName = $name;
-//    $userPass = $pass;
     $user = new Users();
     $user = $user->login($name, $pass);
 
