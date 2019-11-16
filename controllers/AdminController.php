@@ -40,7 +40,7 @@ class AdminController extends Controller
     {
         $searchModel = new itemSearch();
         $dataProvider = $searchModel->search(Yii::$app->request->queryParams);
-        $session = Yii::$app->session();
+        $session = Yii::$app->session;
         if ( $session->get('user') == 'admin'){
             return $this->render('index', [
                 'searchModel' => $searchModel,
@@ -177,7 +177,7 @@ class AdminController extends Controller
     }
 
     public function actionSelect(){
-        $session = Yii::$app->session();
+        $session = Yii::$app->session;
         if ( $session->get('user') == 'admin')
         return $this->render('select');
 //            return $this->render('index', [

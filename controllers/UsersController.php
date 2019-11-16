@@ -37,7 +37,7 @@ public function actionReg() {
 }
 
 public function actionLogout($user){
-    $session = Yii::$app->session();
+    $session = Yii::$app->session;
 //    if ( $session->get('user') == 'admin')
     if( $session->get('user')){
         $session->remove('user');
