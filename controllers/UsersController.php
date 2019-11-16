@@ -22,7 +22,8 @@ public function actionLogin() {
     if ($user) {
       	$session = Yii::$app->session;
         $session->set('user',$name);
-        return Yii::$app->response->redirect(Yii::$app->defaultRoute);
+        return  Yii::$app->response->redirect(Url::to(['/']));
+//        return Yii::$app->response->redirect(Yii::$app->defaultRoute);
 //        return $this->renderPartial('wellcome', compact('user'));
 //        Yii::$app->response->redirect(Url::to(['/']));
     } else {
@@ -36,8 +37,10 @@ public function actionReg() {
 }
 
 public function actionLogout($user){
-    if( $_SESSION['user'] == $user &&  isset($_SESSION['user'])){
-        unset($_SESSION['user']);
+    $session = Yii::$app->session();
+//    if ( $session->get('user') == 'admin')
+    if( $session->get('user')){
+        $session->remove('user');
           return  Yii::$app->response->redirect(Url::to(['/']));
 //        return Yii::$app->response->redirect('category/index');
     }
