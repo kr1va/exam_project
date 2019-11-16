@@ -1,0 +1,139 @@
+/*.modal-open {*/
+/*    padding-right: 0px !important;*/
+/*}*/
+
+/*@fa-font-path:   "../fonts/fa";*/
+
+@font-face {
+font-family: "RobotoSlab-Regular";
+src: url("../fonts/Roboto_Slab/RobotoSlab-Regular.ttf") format("truetype");
+    font-style: normal;
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: "OpenSans-Regular";
+    src: url("../fonts/Open_Sans/OpenSans-Regular.ttf") format("truetype");
+    font-style: normal;
+    font-weight: normal;
+}
+
+@media (min-width: 100px) {
+    .--sized {
+        color: cornflowerblue !important;
+        height: 500px !important;
+    }
+}
+
+@media (min-width: 576px) {
+    .--sized {
+        color: yellowgreen !important;
+        height: auto !important;
+    }
+}
+
+
+@media (min-width: 768px) {
+    .--sized {
+        color: yellowgreen !important;
+        height: auto !important;
+    }
+}
+
+
+@media (min-width: 992px) {
+
+    .--sized {
+        color: coral !important;
+        height: auto !important;
+    }
+
+}
+
+
+@media (min-width: 1200px) {
+    .--sized {
+        color: coral !important;
+        height: 450px !important;
+    }
+}
+
+
+h2, h3, h4, h5{
+    font-family: "RobotoSlab-Regular" !important;
+}
+
+.table-bordered td {
+    /*color:red !important;*/
+    padding: 5px; !important;
+}
+
+.table-bordered th {
+    /*color:red !important;*/
+    padding: 5px; !important;
+}
+
+html,
+body {
+    /*margin: 0;*/
+    font-family: 'OpenSans-Regular', sans-serif !important;
+    font-size: 1rem !important;
+
+
+    padding-right: 0px !important;
+    /*height: 100%;*/
+}
+
+.content {
+    padding: 16px;
+}
+
+.menuQty {
+    /*baseline-shift: 50px;*/
+    /*alignment-baseline: center;*/
+}
+
+.--sized {
+    /*color: yellowgreen;*/
+    height: 450px !important;
+}
+
+
+.boxShadow12 {
+    /*width: 80%;*/
+    /*max-width: 550px;*/
+    /*margin: 0.3em auto;*/
+    /*padding: 1em;*/
+    /*box-shadow:*/
+    /*        0 0 0 7px #60B88D,*/
+    /*        0 0 0 14px #90CDAF,*/
+    /*        0 0 0 21px #BFE3D1;*/
+}
+
+.boxShadow4 {
+    /*width: 80%;*/
+    /*max-width: 550px;*/
+    /*margin: 2em auto;*/
+    /*padding: 4em;*/
+    /*background: lightcyan;*/
+    /*box-shadow: 0 0 4em 4em white inset;*/
+}
+
+.button__body {
+    position: relative;
+}
+
+.button__badge {
+    background-color: #fa3e3e;
+    border-radius: 2px;
+    color: white;
+
+    padding: 1px 3px;
+    font-size: 10px;
+
+    position: absolute; /* Position the badge within the relatively positioned button */
+    top: 0;
+    right: 0;
+}
+
+
