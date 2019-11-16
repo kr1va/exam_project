@@ -23,9 +23,9 @@ public function actionLogin() {
 //    $userPass = $pass;
     $user = new Users();
     $user = $user->login($name, $pass);
-
     if ($user) {
-        $_SESSION['user'] = $name;
+      	$session = Yii::$app->session;
+        $session->set('user',$name);
         return Yii::$app->response->redirect(Yii::$app->defaultRoute);
 //        return $this->renderPartial('wellcome', compact('user'));
 //        Yii::$app->response->redirect(Url::to(['/']));
