@@ -4,12 +4,11 @@ namespace app\models;
 
 use yii\base\Model;
 use yii\data\ActiveDataProvider;
-use app\models\order;
 
 /**
  * OrderSearch represents the model behind the search form of `app\models\order`.
  */
-class OrderSearch extends order
+class OrderSearch extends Order
 {
     /**
      * {@inheritdoc}
