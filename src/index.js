@@ -87,7 +87,7 @@ class Feedback extends React.Component {
     }
 
     validateName(some){
-        var regExp = /^[a-zA-Z0-9]{4,}([._]?[a-zA-Z0-9]+)*$/;
+        var regExp = /^[a-zA-Z0-9а-яА-Я]{4,}([._]?[a-zA-Z0-9]+)*$/;
         return regExp.test(String(some).toLowerCase());
     }
 
