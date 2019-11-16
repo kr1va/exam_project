@@ -20,6 +20,9 @@ class CommentsController extends Controller
     /**
      * {@inheritdoc}
      */
+
+    public $enableCsrfValidation = false;
+
     public function behaviors()
     {
         return [
