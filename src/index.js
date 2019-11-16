@@ -120,7 +120,7 @@ class Feedback extends React.Component {
                         var mailSet = this.state.mail;
                         var comtSet = this.state.comt;
                         const xhr = new XMLHttpRequest();
-                        xhr.open("POST", "comments/comment");
+                        xhr.open("POST", "/comments/comment");
                         xhr.setRequestHeader('Content-Type', 'application/x-www-form-urlencoded');
                         xhr.send('name='+nameSet+'&comt='+comtSet+'&mail='+mailSet);
 
