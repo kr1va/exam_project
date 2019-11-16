@@ -5,7 +5,7 @@ namespace app\controllers;
 use app\models\OrderItem;
 use app\models\OrderItemSearch;
 use Yii;
-use app\models\order;
+use app\models\Order;
 use app\models\OrderSearch;
 use yii\web\Controller;
 use yii\web\NotFoundHttpException;
