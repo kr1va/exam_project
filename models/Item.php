@@ -4,7 +4,7 @@
 namespace app\models;
 use yii\db\ActiveRecord;
 use Yii;
-use yii\web\UploadedFile;
+//use yii\web\UploadedFile;
 
 class Item extends ActiveRecord
 {

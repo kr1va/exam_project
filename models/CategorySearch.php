@@ -9,7 +9,7 @@ use app\models\category;
 /**
  * CategorySearch represents the model behind the search form of `app\models\category`.
  */
-class CategorySearch extends category
+class CategorySearch extends Category
 {
     /**
      * {@inheritdoc}

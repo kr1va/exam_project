@@ -2,14 +2,13 @@
 
 namespace app\controllers;
 
-//use app\models\UploadForm;
 use Yii;
 use app\models\Item;
 use app\models\itemSearch;
 use yii\web\Controller;
 use yii\web\NotFoundHttpException;
 use yii\filters\VerbFilter;
-use app\models\UploadForm;
+
 
 use yii\web\UploadedFile;
 
@@ -146,18 +145,6 @@ class AdminController extends Controller
         }
     }
 
-//    public function actionUpdate($id)
-//    {
-//        $model = $this->findModel($id);
-//
-//        if ($model->load(Yii::$app->request->post()) && $model->save()) {
-//            return $this->redirect(['view', 'id' => $model->id]);
-//        }
-//
-//        return $this->render('update', [
-//            'model' => $model,
-//        ]);
-//    }
 
     /**
      * Deletes an existing item model.

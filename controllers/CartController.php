@@ -15,9 +15,6 @@ class CartController extends Controller
 public function actionOpen() {
     $session = Yii::$app->session;
     $session->open();
-//    $session->remove('cart');
-//    $session->remove('cart.totalQty');
-//    $session->remove('cart.totalSum');
     return $this->renderPartial('cart', compact('session'));
 }
 
@@ -26,7 +23,6 @@ public function actionAdd($name){
     $item = $item->getItem($name);
     $session = Yii::$app->session;
     $session->open();
-//    $session->remove('cart');
     $cart = new Cart();
     $cart->addToCart($item);
     return $this->renderPartial('cart', compact('item','session'));
@@ -71,7 +67,6 @@ public function actionOrder(){
     }
     $this->layout = 'empty';
     return $this->render('order', compact('session','order'));
-//    return $this->render('order', compact('session','order'));
 }
 
 }

@@ -9,7 +9,7 @@ use app\models\comments;
 /**
  * commentsSearch represents the model behind the search form of `app\models\comments`.
  */
-class commentsSearch extends comments
+class commentsSearch extends Comments
 {
     /**
      * {@inheritdoc}

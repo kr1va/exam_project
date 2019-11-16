@@ -2,16 +2,16 @@
 
 namespace app\controllers;
 
-use app\models\OrderItemSearch;
+
 use Yii;
 use app\models\Comments;
-//use app\models\comments;
+
 use app\models\commentsSearch;
-use yii\debug\models\search\Mail;
+
 use yii\web\Controller;
 use yii\web\NotFoundHttpException;
 use yii\filters\VerbFilter;
-//use
+
 /**
  * CommentsController implements the CRUD actions for comments model.
  */
@@ -140,7 +140,8 @@ class CommentsController extends Controller
         throw new NotFoundHttpException('The requested page does not exist.');
     }
 
-    public function actionComment(){
+    public function actionComment()
+    {
         $name = $_POST['name'];
         $comt = $_POST['comt'];
         $mail = $_POST['mail'];
