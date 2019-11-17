@@ -181,7 +181,7 @@ class Feedback extends React.Component {
                     <form className="" onSubmit={this.submit}>
                         <div className="form-group">
                             <div className="my-2">
-                                    <input className="form-control" value={this.state.name} placeholder="Имя пользователя (Eng)" onChange={this.onNameChange} style={{borderColor:nameColor}}></input>
+                                    <input className="form-control" value={this.state.name} placeholder="Имя" onChange={this.onNameChange} style={{borderColor:nameColor}}></input>
                             </div>
                             <div className="my-2">
                                     <input className="form-control" value={this.state.mail} placeholder="E-mail"onChange={this.onMailChange} style={{borderColor:mailColor}}></input>
