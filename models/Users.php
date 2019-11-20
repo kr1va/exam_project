@@ -32,7 +32,7 @@ class Users extends ActiveRecord
         ];
     }
     public function login($name, $pass) {
-        $user = Users::find()->where(['name'=>$name, 'pass'=>$pass])->asArray()->all();
+        $user = Users::find()->where(['name'=>$name, 'pass'=>md5($pass)])->asArray()->all();
        return $user;
 //        return $this->re
      }

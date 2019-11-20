@@ -32,6 +32,7 @@ AppAsset::register($this);
 
     <header class="container">
 
+
             <navbar class="header row">
                 <nav class="bg-white  navbar fixed-top navbar-expand-md px-md-5 px-3 py-1 pb-1 shadow-sm">
                     <a class="navbar-brand d-none d-md-inline" href="/">
@@ -151,10 +152,7 @@ AppAsset::register($this);
 
 <footer class="footer" >
     <div class="container-fluid bg-dark" id="site-footer">
-        <div class="row my-3">
-            <div class="col-12 text-center my-3">
-                <img src="/img/logo.png" alt="Logo" style="widht:100px; height: 100px;">
-            </div>
+        <div class="row my-2">
             <div class="col-sm-12 col-md-3 text-white">
                 <p><?=Info::showInfo()['name']?> <?=Info::showInfo()['year']?></p>
                 <p><a href="<?=Info::showInfo()['site']?>"><?=Info::showInfo()['site']?></a></p>
@@ -166,7 +164,9 @@ AppAsset::register($this);
             <div class="col-sm-12 col-md-3 text-white">
                 <p class="float-right mb-1"><?= Yii::powered() ?></p>
             </div>
-
+            <div class="col-12 text-center my-3">
+                <img src="/img/logo.png" alt="Logo" style="widht:100px; height: 100px;">
+            </div>
         </div>
     </div>
 </footer>

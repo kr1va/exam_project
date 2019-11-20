@@ -23,9 +23,6 @@ public function actionLogin() {
       	$session = Yii::$app->session;
         $session->set('user',$name);
         return  Yii::$app->response->redirect(Url::to(['/']));
-//        return Yii::$app->response->redirect(Yii::$app->defaultRoute);
-//        return $this->renderPartial('wellcome', compact('user'));
-//        Yii::$app->response->redirect(Url::to(['/']));
     } else {
         return $this->renderPartial('error' , ['user'=>$name]);
     }
@@ -42,7 +39,6 @@ public function actionLogout($user){
     if( $session->get('user')){
         $session->remove('user');
           return  Yii::$app->response->redirect(Url::to(['/']));
-//        return Yii::$app->response->redirect('category/index');
     }
 }
 }
