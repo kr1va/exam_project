@@ -67,7 +67,7 @@ AppAsset::register($this);
                             <li class="nav-item px-3 mx-1 mx-md-0 px-md-0">
                                 <a class='nav-link' title="Обратная связь" href="<?= URL::to(['category/contact']) ?>">
                                     <i class="far fa-comments fa-2x" aria-hidden="true"></i>
-                                    <span class=" d-sm-inline d-md-none"> Обратная сввязь</span>
+                                    <span class=" d-sm-inline d-md-none"> Обратная связь</span>
                                 </a>
                             </li>
                             <li class="nav-item px-3 mx-1 mx-md-0 px-md-0 d-none d-md-inline">

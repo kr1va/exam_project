@@ -121,6 +121,8 @@ class OrderController extends Controller
     {
         $this->findModel($id)->delete();
 
+        OrderItem::deleteAll(['order_id'=>$id]);
+        
         return $this->redirect(['index']);
     }
 
