@@ -14,7 +14,7 @@ $this->title = $name;
     <h3 class="text-center"><?= Html::encode($this->title) ?></h3>
 
     <div class="text-center">
-        <h5><?= Html::a('< Назад', ['index'],['class'=>'d-inline']);?></h5>
+        <h5><?= Html::a('< Назад', '/',['class'=>'d-inline']);?></h5>
     </div>
     <div class="alert alert-danger text-center">
         <?= nl2br(Html::encode($message)) ?>
