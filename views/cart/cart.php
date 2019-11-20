@@ -41,7 +41,7 @@ if ($session['cart']) {
     </tr>
     </tbody>
 </table>
-<div class="modal-buttons btn-group d-flex justify-content-between">
+<div class="modal-buttons btn-group d-flex justify-content-between p-3 p-md-0">
     <button type="button" class="btn btn-outline-danger p-0 p-md-1" onclick="clearCart(event)"><i class="far fa-trash d-none d-md-inline"></i>Очистить корзину</button>
     <button type="button" class="btn btn-outline-secondary btn-close p-0 p-md-1">Продолжить покупки</button>
     <button type="button" class="btn btn-success btn-next p-0 p-md-1"><i class="fa fa-check fa-fw d-none d-md-inline" aria-hidden="true"></i>Оформить заказ</button>
