@@ -81,7 +81,7 @@ AppAsset::register($this);
                             </li>
                             <li class="d-none d-md-block">
                                 <form action="<?= URL::to(['category/search']) ?>" class="form-inline d-flex flex-row my-2 my-lg-1" method="get">
-                                    <input class="form-control my-sm-0 d-flex w-75" type="search" placeholder="Введите название..." name="search">
+                                    <input class="form-control my-sm-0 w-75" type="search" placeholder="Введите название..." name="search">
                                     <button class="btn btn-outline-success w-25 my-sm-0" type="submit"><i class="fa fa-search" aria-hidden="true"></i></button>
                                 </form>
                             </li>
